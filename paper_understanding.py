@@ -1,8 +1,20 @@
+"""
+使用 Moonshot AI 的 Kimi 模型理解论文
+"""
+import os
 from pathlib import Path
 from openai import OpenAI
 
+# 初始化 OpenAI 客户端
+# 从 configs/.env 文件中读取 API_KEY
+from dotenv import load_dotenv
+
+env_path = Path(".env")
+load_dotenv(dotenv_path=env_path)
+print(os.getenv("API_KEY"))
+
 client = OpenAI(
-    api_key="sk-********",
+    api_key=os.getenv("API_KEY"),
     # 在这里将 MOONSHOT_API_KEY 替换为你从 Kimi 开放平台申请的 API Key
     base_url="https://api.moonshot.cn/v1",
 )
