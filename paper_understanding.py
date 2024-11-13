@@ -2,7 +2,7 @@ from pathlib import Path
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-NyjSSRXYQrICU0n3SDRKFZvcHFLNaqhcRTvzvX5JH82S08gH",
+    api_key="sk-********",
     # 在这里将 MOONSHOT_API_KEY 替换为你从 Kimi 开放平台申请的 API Key
     base_url="https://api.moonshot.cn/v1",
 )
