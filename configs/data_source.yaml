@@ -1,0 +1,3 @@
+data_source:
+  arxiv:
+    url: https://arxiv.org/search/?query={query}&searchtype=all
